@@ -2,15 +2,19 @@ import React from 'react'
 
 import { Container, Row } from 'react-bootstrap'
 
-import Navigator from './part/Navigator'
-import  MainView from './view/MainView'
+import { BrowserRouter as Router } from 'react-router-dom'
 
-export default function App() {
+import Nave from './nave'
+import View from './view'
+
+export default function() {
   return (
     <Container>
       <Row>
-        <Navigator/>
-        <MainView/>
+        <Router>
+          <Nave/>
+          <View/>
+        </Router>
       </Row>
     </Container>
   )

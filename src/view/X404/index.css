@@ -1,0 +1,32 @@
+#X404 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#X404 .Sign {
+  width: 180px;
+  height: 180px;
+  background: #ffa200;
+  transform: rotate(45deg);
+  border: 5px dashed #000;
+  border-radius: 5px;
+  margin: 50pt auto;
+}
+#X404 .Sign::before {
+  display: block;
+  content: "404";
+  font: 4rem sans-serif;
+  font-weight: bold;
+  transform: rotate(-45deg);
+}
+#X404 .Text {
+  content: "Page not found";
+  transform: rotate(-45deg);
+  position: absolute;
+  margin-top: 225pt;
+  width: 100%;
+  text-align: center;
+}
