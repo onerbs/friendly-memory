@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#root .container-fluid{
+  padding: 0;
+}
+
+/* Estilos Personalizados */
+.menu-desplegable{
+  background-color: #09646e;
+}
+
+.menu-desplegable.navbar-light .navbar-nav .nav-link{
+  color: #FFF;
+}
+
+.menu-desplegable.navbar-light .navbar-brand{
+  color: #FFF;
+}
+
+@media only screen and (min-width: 768px){
+  .menu-desplegable.navbar{
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  .menu-desplegable.navbar .navbar-nav{
+    flex-direction: column;
+  }
+
+  .menu-desplegable.navbar .navbar-collapse{
+    align-items: flex-start;
+    width: 100%;
+  }
+}
